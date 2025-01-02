@@ -34,6 +34,7 @@ const eslintConfig = [
       // Disable specific ESLint rules here
       "@typescript-eslint/no-unused-vars": "off", // Disable the no-unused-vars rule
       "no-console": "off", // Disable the no-console rule
+      "@typescript-eslint/no-explicit-any": "off", // Disable the no-explicit-any rule
     },
   },
 ];
