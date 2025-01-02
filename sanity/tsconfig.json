@@ -10,7 +10,10 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    
+     "typeRoots": ["./node_modules/@types", "./typings"],
+    "moduleResolution": "node"
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
