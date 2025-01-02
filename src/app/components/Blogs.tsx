@@ -4,7 +4,6 @@ import { client, urlfor } from "../lib/sanity";
 import { Image } from "next-sanity/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Hero from "../components/Hero";
 
 async function getData(){
   const query = `*[_type == 'blog'] | order(_createdAt asc) {

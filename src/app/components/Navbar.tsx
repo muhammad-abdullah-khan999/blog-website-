@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import { ModeToggle } from './ModeToggle'
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
-import { AppSidebar } from './appSidebar'
 
 export default function Navbar () {
   return (

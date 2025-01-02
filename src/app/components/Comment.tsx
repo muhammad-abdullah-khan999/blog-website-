@@ -1,13 +1,12 @@
 "use client"
 
-import { AlertDialogHeader, AlertDialogFooter } from '@/components/ui/alert-dialog'
-import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogTitle, AlertDialogDescription, AlertDialogCancel, AlertDialogAction } from '@radix-ui/react-alert-dialog'
+
 import React, { useState } from 'react'
 
 const Comment = () => {
-    const [title, setTitle] = useState("")
-    const [name, setName] = useState("")
-    const [mainTask, setMainTask] = useState<any>([])
+    const [title, setTitle] = useState<string | any>("")
+    const [name, setName] = useState<string | any>("")
+    const [mainTask, setMainTask] = useState<[] | any>([])
   
     
   const submitHandler = (e : any)=>{
@@ -30,7 +29,7 @@ const Comment = () => {
 
 
     const deleteHandler = (i: any) =>{
-      let copyTask = [...mainTask]
+      const copyTask = [...mainTask]
       copyTask.splice(i,1)
       setMainTask(copyTask)
     }
