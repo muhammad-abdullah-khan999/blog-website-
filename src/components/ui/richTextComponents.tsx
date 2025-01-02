@@ -1,6 +1,8 @@
+import { Image } from "next-sanity/image"
+
 const myPortableTextComponents = {
   types: {
-    image: ({value}:any) => <img src={value.imageUrl} />,
+    image: ({value}:any) => <Image alt="" src={value.imageUrl} />,
     callToAction: ({value, isInline}:any) =>
       isInline ? (
         <a href={value.url}>{value.text}</a>

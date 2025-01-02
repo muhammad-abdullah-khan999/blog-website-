@@ -1,5 +1,6 @@
 import React from 'react'
 import  Link  from 'next/link';
+import { Image } from 'next-sanity/image';
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-full w-4/6 ">
-      <img
+      <Image
         className="object-cover object-center rounded"
         alt="hero"
         src="https://i.pinimg.com/736x/b9/27/ba/b927ba56592bdad0f8dbd569bf3e274c.jpg"
