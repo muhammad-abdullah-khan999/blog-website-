@@ -10,7 +10,7 @@ const Hero = () => {
       <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-primary">
         Welcome to
         <br className="hidden lg:inline-block" />
-        Blog Website of Abdullah Khan
+        Blog Website of Abdullah Khan {process.env.PROJECTID}
       </h1>
       <p className="mb-8 leading-relaxed text-muted-foreground">
         Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
@@ -29,7 +29,8 @@ const Hero = () => {
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-full w-4/6 ">
       <Image
-        className="object-cover object-center rounded"
+        className="object-cover object-center roundedl"
+        width={800} height={800}
         alt="hero"
         src="https://i.pinimg.com/736x/b9/27/ba/b927ba56592bdad0f8dbd569bf3e274c.jpg"
       />

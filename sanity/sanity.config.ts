@@ -7,8 +7,9 @@ export default defineConfig({
   name: 'default',
   title: 'blog1',
 
-  projectId: '5qkyeq8k',
-  dataset: 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '5qkyeq8k',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+
 
   plugins: [structureTool(), visionTool()],
 
