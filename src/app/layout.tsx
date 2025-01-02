@@ -46,10 +46,10 @@ export default function RootLayout({
             <div className=" w-full h-full bg-orange-100/2 dark:bg-[#0C0A09]">
             
             
-              <div className=" w-screen bg-orange-100 dark:bg-[#121212]/50 sticky top-0 "><Navbar /></div>
+              <div className=" w-screen z-30 bg-orange-100 dark:bg-[#121212]/50 sticky top-0 "><Navbar /></div>
               <SidebarProvider >
-              <div className="z-50 max-h-20 sticky top-20 bg-orange-100 dark:bg-[#121212]"><SidebarTrigger /></div>
-              <div className="bg-orange-100 dark:bg-[#121212]"><AppSidebar /></div>
+              <div className="z-50 max-h-screen sticky top-20 text-primary bg-orange-100 dark:bg-[#121212]/50"><SidebarTrigger /></div>
+              <div className="bg-orange-100 dark:bg-[#121212] z-40"><AppSidebar /></div>
             
               <main className="max-w-screen-2xl mx-auto px-4 mb-10">
               

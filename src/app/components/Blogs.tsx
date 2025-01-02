@@ -29,7 +29,7 @@ export default async function Blogs() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 gap-5 " >
       {data.map((value,i)=>(
         <Link href={`/blog/${value.currentSlug}`} key={i}>
-        <Card className="bg-orange-100 dark:bg-[#121212] hover:text-primary border border-gray-400 dark:border-gray-700 hover:border hover:border-primary dark:hover:border-primary hover:drop-shadow-2xl dark:hover:shadow-gray-500 ">
+        <Card className="bg-orange-100 dark:bg-[#121212] hover:text-primary border border-gray-400 dark:border-gray-700 hover:border hover:z-0 hover:border-primary dark:hover:border-primary hover:drop-shadow-2xl dark:hover:shadow-gray-500 ">
           
           <CardContent className="mt-5">
           <Image alt="titleImage" src={urlfor(value.titleImage).url()} width={500} height={500}/>
