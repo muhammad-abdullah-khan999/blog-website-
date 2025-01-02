@@ -52,12 +52,12 @@ type ToasterToast = ToastProps & {
 //       toastId?: ToasterToast["id"]
 //     }
 
-const actionTypes = {
-  ADD_TOAST: "ADD_TOAST",
-  UPDATE_TOAST: "UPDATE_TOAST",
-  DISMISS_TOAST: "DISMISS_TOAST",
-  REMOVE_TOAST: "REMOVE_TOAST",
-} as const;
+type ActionType = {
+  ADD_TOAST: "ADD_TOAST";
+  UPDATE_TOAST: "UPDATE_TOAST";
+  DISMISS_TOAST: "DISMISS_TOAST";
+  REMOVE_TOAST: "REMOVE_TOAST";
+};
 
 let count = 0;
 
@@ -65,11 +65,6 @@ function genId() {
   count = (count + 1) % Number.MAX_SAFE_INTEGER;
   return count.toString();
 }
-
-// Example usage to avoid the unused variable warning:
-console.log(actionTypes.ADD_TOAST);
-
-type ActionType = typeof actionTypes;
 
 type Action =
   | {
